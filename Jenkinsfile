@@ -4,6 +4,12 @@ pipeline{
     agent { label "dev"};
     
     stages{
+        stage("Clean Up")
+        {
+            steps{
+                cleanWs()
+            }
+        }
         stage("Code Clone"){
             steps{
                script{
