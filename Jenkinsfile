@@ -13,8 +13,8 @@ pipeline{
         stage("Code Clone"){
             steps{
                script{
-                   clone("https://github.com/LondheShubham153/two-tier-flask-app.git", "master")
-               }
+                   git url:"https://github.com/Shilpa1992-git/two-tier-flask-app.git", branch:"master"
+              }
             }
         }
        
